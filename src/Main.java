@@ -6,13 +6,16 @@ public class Main {
 
         System.out.println("Do you want to learn your chinese zodiac?");
 
+        //Taking birth year from user
         System.out.println("Enter your birth year: ");
         int birth_year = scanner.nextInt();
 
+        //Taking the remainder of the year of birth in the mod operation according to 12
         int remain = birth_year%12;
 
         System.out.print("Çin Zodyağı Burcunuz: ");
 
+        //Data assignment occurs based on the remaining value.
         switch (remain){
             case 0:
                 System.out.println("Maymun");
